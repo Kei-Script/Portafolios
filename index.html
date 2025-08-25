@@ -4,135 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.typekit.net/nst1fmg.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <!-- <link rel="stylesheet" href="css/styles-dist.css"> -->
-  <!-- <script defer src="scripts/scripts.js"></script> -->
+  <link rel="stylesheet" href="css/styles-dist.css">
+  <script defer src="scripts/scripts.js"></script>
   <title>Keiber Rodriguez | Web Developer Portfolio</title>
 </head>
 
 <body id="home">
   <!-- <div class="div-menu-placeholder" id="navigation_placeholder"></div> -->
   <header class="main-header ">
-    <h1 aria-label="Keiber Rodriguez">
-      <span class="code">Let x=</span>
-      <span class="main-header__title">Keiber_Rodriguez</span>
-      <span class="code">;</span>
-    </h1>
-    <!-- <div class="user-img">
-      <img src="assets/images/WhatsApp Image 2025-07-15 at 06.09.27_783ee56a.jpg" alt="">
-    </div> -->
-    <h2 aria-label="Web Developer" class="main-header__subtitle">
-      <span class="main-header__title main-header__title--sub ">
-        Web_Developer
-      </span>
-      <span class="code">(x);</span>
-    </h2>
-    <p class="main-header__text">
-      I am a self-taught student with a passion for <strong class="strong">personal growth</strong> and technical
-      challenges. I seek to
-      <strong class="strong">join a solid
-        team</strong> where I can contribute and grow professionally.
-    </p>
+    <div class="main-header__container">
+      <div class="main-header__midcontainer"></div>
+      <h1 aria-label="Keiber Rodriguez">
+        <span class="code">Let x=</span>
+        <span class="main-header__title">Keiber_Rodriguez</span>
+        <span class="code">;</span>
+      </h1>
+      <h2 aria-label="Web Developer" class="main-header__subtitle">
+        <span class="main-header__title main-header__title--sub ">
+          Web_Developer
+        </span>
+        <span class="code">(x);</span>
+      </h2>
+      <p class="main-header__text">
+        I am a self-taught student with a passion for <strong class="strong">personal growth</strong> and technical
+        challenges. I seek to
+        <strong class="strong">join a solid
+          team</strong> where I can contribute and grow professionally.
+      </p>
+    </div>
   </header>
   <main>
     <section id="projects" class="section projects">
       <header class="section__header">
         <h2 class="section__title title">
-          &lt; Projects &gt;
+          &lt; I've worked on &gt;
         </h2>
       </header>
       <div class="carrusel-container">
         <div class="carrusel-track">
-          <article class="project-card project-card--purple">
-            <img class="project-card__img" src="assets/images/shoes-2425122_1280.jpg" alt="imagen de">
-            <div class="project-card__paddinfixer">
-              <header>
-                <h3 class="project-card__title">Shoes MC'Fly</h3>
-              </header>
-              <p class="project-card__p">A scalable and responsive website developed by a collaborative team using
-                Vue.js,
-                Vue Router, Vuex, and
-                SCSS,
-                built with long-term growth and easy maintenance in mind.</p>
-              <div class="cta-div">
-                <a class="button__cta" href="#">
-                  <svg class="svg-icon svg-icon--rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path
-                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v280h-80v-280H200v560h280v80H200Zm360 0v-80h144L332-572l56-56 372 371v-143h80v280H560Z" />
-                  </svg>Demo</a>
-                <a class="button__cta" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                    class="svg-icon">
-                    <path
-                      d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
-                  </svg>Code</a>
-              </div>
+          <article class="project-card">
+            <!-- <img class="project-card__img" src="assets/images/shoes-2425122_1280.jpg" alt="imagen de"> -->
+
+            <header class="project-card__header">
+              <h3 class="project-card__title">Shoes MC'Fly</h3>
+            </header>
+            <p class="project-card__p">A scalable and responsive website developed by a collaborative team using
+              Vue.js,
+              Vue Router, Vuex, and
+              SCSS,
+              built with long-term growth and easy maintenance in mind.</p>
+            <div class="cta-div">
+              <a class="button__cta" href="#">
+                <svg class="svg-icon svg-icon--rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <path
+                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v280h-80v-280H200v560h280v80H200Zm360 0v-80h144L332-572l56-56 372 371v-143h80v280H560Z" />
+                </svg>Demo</a>
+              <a class="button__cta" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                  class="svg-icon">
+                  <path
+                    d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                </svg>Code</a>
+
             </div>
           </article>
-          <article class="project-card project-card--purple">
-            <img class="project-card__img" src="assets/images/shoes-2425122_1280.jpg" alt="imagen de">
-            <div class="project-card__paddinfixer">
-              <header>
-                <h3 class="project-card__title">Shoes MC'Fly</h3>
-              </header>
-              <p class="project-card__p">A scalable and responsive website developed by a collaborative team using
-                Vue.js,
-                Vue Router, Vuex, and
-                SCSS,
-                built with long-term growth and easy maintenance in mind.</p>
-              <div class="cta-div">
-                <a class="button__cta" href="#">
-                  <svg class="svg-icon svg-icon--rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path
-                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v280h-80v-280H200v560h280v80H200Zm360 0v-80h144L332-572l56-56 372 371v-143h80v280H560Z" />
-                  </svg>Demo</a>
-                <a class="button__cta" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                    class="svg-icon">
-                    <path
-                      d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
-                  </svg>Code</a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card project-card--purple">
-            <img class="project-card__img" src="assets/images/shoes-2425122_1280.jpg" alt="imagen de">
-            <div class="project-card__paddinfixer">
-              <header>
-                <h3 class="project-card__title">Shoes MC'Fly</h3>
-              </header>
-              <p class="project-card__p">A scalable and responsive website developed by a collaborative team using
-                Vue.js,
-                Vue Router, Vuex, and
-                SCSS,
-                built with long-term growth and easy maintenance in mind.</p>
-              <div class="cta-div">
-                <a class="button__cta" href="#">
-                  <svg class="svg-icon svg-icon--rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path
-                      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v280h-80v-280H200v560h280v80H200Zm360 0v-80h144L332-572l56-56 372 371v-143h80v280H560Z" />
-                  </svg>Demo</a>
-                <a class="button__cta" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                    class="svg-icon">
-                    <path
-                      d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
-                  </svg>Code</a>
-              </div>
-            </div>
-          </article>
+
 
         </div>
       </div>
 
       <div class="project-navigation">
-        <button class="button__cta" id="prev">&#8592;</button>
-        <button class="button__cta" id="next">&#8594;</button>
+        <ul class="project-navigation__ul">
+          <li>O</li>
+          <li>O</li>
+          <li>O</li>
+          <li>O</li>
+          <li>O</li>
+        </ul>
       </div>
 
     </section>
-    <section id="skills" class="section">
+    <section id="skills" class="section section--skills">
       <header class="section__header">
         <h2 class="section__title title">
-          &lt; Stack &gt;
+          &lt; My arsenal &gt;
         </h2>
       </header>
       <div class="tecno-view">
