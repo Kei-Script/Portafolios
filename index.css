@@ -1,0 +1,13 @@
+body {
+  min-height: 100dvh;
+  /* outline: 2px solid steelblue; */
+  color: azure;
+  font-family: sans-serif;
+}
+
+section {
+  min-height: 100dvh;
+}
+.bg {
+  background: #464646;
+}
