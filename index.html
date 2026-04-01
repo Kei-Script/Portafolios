@@ -5,35 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/MobileMenu.css">
+    <script type="module" src="./index.js"></script>
 
     <title>Keiber Rodriguez | Front-end Portafolios</title>
   </head>
   <body>
     <div class="bg">
     <main>
+      <div id="blurBg" class="MobileMenuBg"></div>
       <header>
-        <nav>
-          <div>
-            <h1>Keiber Rodriguez</h1>
-            <p>Lara, Venezuela</p>
-          </div>
-          <div>
+        <div class="MobileMenu">
+          <div id="MobileMenuModal" class="MobileMenu__Modal">
             <ul>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#"><img src="#" alt="Logo Azul de KeiScript" /></a>
-              </li>
-            </ul>
+            Social
+                <li>
+                  <a class="NavBar__link" href="#">Youtube</a>
+                </li>
+                <li>
+                  <a class="NavBar__link" href="#">Facebook</a>
+                </li>
+                <li>
+                  <a class="NavBar__link" href="#">Ig</a>
+                </li>
+          </ul>
+          <nav class="NavBar">
+              <ul>
+                <li>
+                  <a class="NavBar__link" href="#">Projects</a>
+                </li>
+                <li>
+                  <a class="NavBar__link" href="#">About</a>
+                </li>
+                <li>
+                  <a class="NavBar__link" href="#">Contact</a>
+                </li>
+              </ul>
+          </nav>
           </div>
-        </nav>
+          
+          <div class="MobileMenu__PrincipalButtons">
+              <div class="MobileMenu__linkContainer">
+                <img class="ItemSubButton" src="" alt="Link">
+              </div>
+              <div class="MobileMenu__linkContainer">
+                <img id="toggleMenu" class="ItemSubButton" src="" alt="H">
+              </div>
+          </div>
+          
+        </div>
         <div>
           <div class="AvatarContainer">
             <img
