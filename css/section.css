@@ -1,0 +1,15 @@
+section {
+  min-height: 100dvh;
+}
+
+.sectionTitles {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.sectionP {
+  margin-bottom: 2rem;
+}
+.workFooterLink {
+  text-align: center;
+  padding: 2rem;
+}
