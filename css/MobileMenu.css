@@ -50,10 +50,7 @@
 .NavBar {
   outline: 1px solid rgb(15, 235, 26);
 }
-.NavBar__link {
-  padding: 1rem;
-  display: block;
-}
+
 .MobileMenu__Modal {
   background-color: red;
   transform: translateY(20%);
