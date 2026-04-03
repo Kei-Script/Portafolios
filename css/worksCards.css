@@ -1,0 +1,26 @@
+.card {
+  outline: 2px solid yellow;
+  padding: 2rem 2rem;
+}
+.card__img {
+  outline: 2px solid brown;
+  display: block;
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+.card__title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card__foo {
+  display: flex;
+  gap: 1rem;
+  outline: 2px solid saddlebrown;
+}
+.card__p {
+  margin-bottom: 2rem;
+}
+.card__link {
+  background-color: aquamarine;
+  width: 100%;
+}
