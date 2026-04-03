@@ -1,0 +1,16 @@
+.skillsContainer {
+  overflow: hidden;
+}
+.skillContainer__carrete {
+  display: flex;
+  gap: 1rem;
+}
+.skillContainer__carrete--motion {
+  transition: transform 1s linear;
+}
+.carrete__element {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
