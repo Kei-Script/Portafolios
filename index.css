@@ -6,15 +6,25 @@ body {
   position: relative;
   background-color: rgb(36, 36, 36);
 }
-.circle {
+.elemento {
   position: fixed;
-  bottom: 0;
-  left: 1rem;
-  background-color: paleturquoise;
-  border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
-  animation: bounce 2s infinite;
+  width: 40rem;
+  height: 40rem;
+}
+.elemento--1 {
+  top: -15rem;
+  left: -10rem;
+  animation: roll 30s infinite;
+}
+.elemento--2 {
+  bottom: -10rem;
+  right: -20rem;
+  animation: roll 40s infinite;
+}
+.elemento--3 {
+  bottom: 4rem;
+  right: 1rem;
+  animation: roll 35s infinite;
 }
 .bg {
   position: relative;
@@ -30,16 +40,16 @@ body {
   display: block;
 }
 
-@keyframes bounce {
+@keyframes roll {
   0% {
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 
   50% {
-    transform: translateY(20rem);
+    transform: rotate(180deg);
   }
 
   100% {
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 }
