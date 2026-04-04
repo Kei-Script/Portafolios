@@ -3,10 +3,23 @@ body {
   /* outline: 2px solid steelblue; */
   color: azure;
   font-family: sans-serif;
+  position: relative;
+  background-color: rgb(36, 36, 36);
 }
-
+.circle {
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+  background-color: paleturquoise;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  animation: bounce 2s infinite;
+}
 .bg {
-  background: #464646;
+  position: relative;
+  /* backdrop-filter: blur(10px); */
+  background-color: rgba(70, 68, 68, 0.664);
 }
 
 .Padding2e {
@@ -15,4 +28,18 @@ body {
 .pageLinkBtn {
   padding: 1rem;
   display: block;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
