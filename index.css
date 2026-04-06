@@ -53,3 +53,12 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  background-color: black;
+  color: white;
+  min-height: 30dvh;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
