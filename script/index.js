@@ -1,9 +1,9 @@
-const toggleMenu = document.getElementById("toggleMenu");
-const blurBg = document.getElementById("blurBg");
-const MobileMenuModal = document.getElementById("MobileMenuModal");
-toggleMenu.addEventListener("click", () => {
-  blurBg.classList.toggle("MobileMenuBg--active");
-  MobileMenuModal.classList.toggle("MobileMenu__Modal--active");
+const toggleButton = document.getElementById("toggleButton");
+const mobileBgBlur = document.getElementById("mobileBgBlur");
+const mobileMenuModal = document.getElementById("mobileMenuModal");
+toggleButton.addEventListener("click", () => {
+  mobileBgBlur.classList.toggle("mobileBg--active");
+  mobileMenuModal.classList.toggle("mobileMenu__modal--active");
 });
 
 // Funcionalidad deprecated pra obtener iconos de la web
@@ -22,15 +22,11 @@ toggleMenu.addEventListener("click", () => {
 
 // Funcionalidad del Carrusel
 
-const skillContainer_carrete = document.getElementById("skillContainer");
+const skillContainer_carrete = document.getElementById("skillTrack");
 
 const URLsvg = [
   "assets/svg/html5.svg",
   "assets/svg/css.svg",
-  "assets/svg/javascript.svg",
-  "assets/svg/postman.svg",
-  "assets/svg/css.svg",
-  "assets/svg/html5.svg",
   "assets/svg/javascript.svg",
   "assets/svg/postman.svg",
 ];
@@ -43,7 +39,7 @@ const newCarrete = (array) => {
   array.forEach((e, index) => {
     const div = document.createElement("div");
     div.id = `skill__div-${index}`;
-    div.classList.add("carrete__element");
+    div.classList.add("skill__element");
     const img = document.createElement("img");
     img.id = `skil__img-${index}`;
     img.classList.add("carrete__img");
@@ -60,7 +56,7 @@ newCarrete(URLsvg);
 //invocamos la funcion al cargar la página
 
 // Hacer que el carrusel se mueva infinitamente
-const view = document.getElementById("skillContainerView");
+const view = document.getElementById("skillWindow");
 const ItemsCarreteCopy = skillContainer_carrete.cloneNode(true);
 const carreteItems = skillContainer_carrete.childNodes;
 
@@ -74,12 +70,12 @@ let positionIndex = 1;
  * Controla el desaplazamiento del carrete de iconos
  */
 const translate = () => {
-  skillContainer_carrete.classList.add("skillContainer__carrete--motion");
+  skillContainer_carrete.classList.add("skill__carrete--motion");
   const direction = -1; //negativos se mueven a la derecha positivos a la izquierda
   skillContainer_carrete.style.transform = `translateX(${positionIndex * (carreteItemWidth + 16) * direction}px)`;
   positionIndex++;
   if (positionIndex === carreteItemsArray.length + 2) {
-    skillContainer_carrete.classList.remove("skillContainer__carrete--motion");
+    skillContainer_carrete.classList.remove("skill__carrete--motion");
     skillContainer_carrete.style.transform = `translateX(0px)`;
     positionIndex = 1;
   }
