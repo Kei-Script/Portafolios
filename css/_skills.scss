@@ -1,14 +1,14 @@
-.skillsContainer {
+.skill {
   overflow: hidden;
 }
-.skillContainer__carrete {
+.skill__carrete {
   display: flex;
   gap: 1rem;
 }
-.skillContainer__carrete--motion {
+.skill__carrete--motion {
   transition: transform 1s linear;
 }
-.carrete__element {
+.skill__element {
   width: 5rem;
   height: 5rem;
   padding: 0.5rem;

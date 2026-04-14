@@ -3,98 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./css/MobileMenu.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/skill.css">
-    <link rel="stylesheet" href="./css/section.css">
-    <link rel="stylesheet" href="./css/worksCards.css">
-    <link rel="stylesheet" href="./css/aboutSection.css">
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./src/main.css">
+    <script defer type="module" src="./script/index.js"></script>
 
     <title>Keiber Rodriguez | Front-end Portafolios</title>
   </head>
   <body class="body">
-    <!-- Menu mobile -->
-    <div id="blurBg" class="MobileMenuBg"></div>
-       <div class="MobileMenu">
-          <div id="MobileMenuModal" class="MobileMenu__Modal">
-            <ul>
-            Social
-                <li>
-                  <a class="pageLinkBtn" href="#">Youtube</a>
-                </li>
-                <li>
-                  <a class="pageLinkBtn" href="#">Facebook</a>
-                </li>
-                <li>
-                  <a class="pageLinkBtn" href="#">Ig</a>
-                </li>
+    <!-- Mobile Menu -->
+    <div id="mobileBgBlur" class="mobileBg"></div>
+    <div class="mobileMenu">
+      <div id="mobileMenuModal" class="mobileMenu__modal">
+        <ul>
+            <li>
+              <a class="pageLinkBtn" href="#">Youtube</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">Ig</a>
+            </li>
+        </ul>
+        <nav >
+          <ul>
+            <li>
+              <a class="pageLinkBtn" href="#">Projects</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">About</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">Contact</a>
+            </li>
           </ul>
-          <nav class="NavBar">
-              <ul>
-                <li>
-                  <a class="pageLinkBtn" href="#">Projects</a>
-                </li>
-                <li>
-                  <a class="pageLinkBtn" href="#">About</a>
-                </li>
-                <li>
-                  <a class="pageLinkBtn" href="#">Contact</a>
-                </li>
-              </ul>
-          </nav>
-          </div>
-          
-          <div class="MobileMenu__PrincipalButtons">
-              <div class="MobileMenu__linkContainer">
-                <img class="ItemSubButton" src="" alt="Link">
-              </div>
-              <div class="MobileMenu__linkContainer">
-                <img id="toggleMenu" class="ItemSubButton" src="" alt="H">
-              </div>
+        </nav>
+      </div>
+      <div class="mobileMenu__mainButtons">
+        <div class="mobileMenu__linkContainer">
+          <img class="mobileMenu__mainLink" src="" alt="Link">
+        </div>
+        <ul class="menu--biger">
+            <li>
+              <a class="pageLinkBtn" href="#">Youtube</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="pageLinkBtn" href="#">Ig</a>
+            </li>
+        </ul>
+        <nav>
+          <ul class="menu--biger menu--order2">
+            <li>
+              <a class="pageLinkBtn" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobileMenu__linkContainer mobileMenu__linkContainer--mod">
+          <img id="toggleButton" class="mobileMenu__mainLink" src="" alt="H">
+        </div>
+      </div>
+    </div>
+    <!-- Bg Elements -->
+    <img class="object object--1" src="./assets/svg/object.svg" alt="">
+    <img class="object object--2" src="./assets/svg/object2.svg" alt="">
+    <img class="object object--3" src="./assets/svg/object3.svg" alt="">
+    <div class="aplicationBg">
+      <!-- Main container -->
+      <main class="main">
+        <header class="padding2Rem ">
+          <div class="intro marginBot2Rem" >
+            <div class="intro__avatar marginBot2Rem">
+              <img src="#" alt="Logo KeiScript"/>
             </div>
-            
+            <h1 class="intro__title">Keiber Rodriguez</h1>
+            <h2 class="intro__title intro__title--sub">Desarrollador Front-end</h2>
           </div>
-        
-    <img class="elemento elemento--1" src="./assets/svg/elemento.svg" alt="">
-    <img class="elemento elemento--2" src="./assets/svg/elemento2.svg" alt="">
-    <img class="elemento elemento--3" src="./assets/svg/elemento3.svg" alt="">
-    <div class="bg">
-    <main class="main">
-    
-      <header class="Padding2e">
-        <div class="HeaderIntro">
-          <div class="AvatarContainer">
-            <img
-              src="#"
-              alt="Fotografía de Keiber Rodriguez Mirando al Norte"
-            />
+          <div id="skillWindow"  class="skill">
+            <div id="skillTrack" class="skill__carrete"></div>
           </div>
-          <h1 class="IntroTitle">Keiber Rodriguez</h1>
-          <h2 class="IntroTitle">Desarrollador Full Stack</h2>
-        </div>
-        
-       
-        <div id="skillContainerView"  class="skillsContainer">
-          <div id="skillContainer" class="skillContainer__carrete"></div>
-        </div>
-        <!-- <div>
-          <p>
-            Desarrollador full stack apasionado por encontrar soluciones
-            eficientes e intuitivas para mis clientes Trayendo el concepto al
-            código
-          </p>
-        </div> -->
-      </header>
-      <!-- Works -->
-      <section class="Padding2e">
-        <header>
-          <h2 class="sectionTitles">He trabajado en</h2>
-          <p class="sectionP">Lorem, ipsum dolor sit amet consipisicing iusto architecto magnam minima delectus assumenda quo quod.</p>
         </header>
-        <div>
+        <!-- Works -->
+        <section class="section padding2Rem">
+          <header>
+            <h2 class="section__title marginBot2Rem">He trabajado en</h2>
+            <p class="marginBot2Rem">Lorem, ipsum dolor sit amet consipisicing iusto architecto magnam minima delectus assumenda quo quod.</p>
+          </header>
           <article class="card">
             <header>
               <picture class="card__img">
@@ -104,67 +99,61 @@
               <h3 class="card__title">Nombre del Proyecto</h3>
             </header>
             <p class="card__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ab.</p>
-            <footer class="card__foo">
+            <footer class="card__footer">
               <a class="card__link pageLinkBtn" href="#">Link</a>
               <a class="card__link pageLinkBtn" href="#">Link</a>
             </footer>
           </article>
-        </div>
-        <footer class="workFooterLink">
-          <a href="#">Ver mas proyectos</a>
-        </footer>
-      </section>
-      <!-- About -->
-      <section class="Padding2e aboutSection">
-       
-
-        
-
-          
+          <footer class="section__footer">
+            <a href="#">Ver mas proyectos</a>
+          </footer>
+        </section>
+        <!-- About -->
+        <section class="padding2Rem about">
           <header>
-            <h2 class="sectionTitles">Conóceme</h2>                 
-            <p class="sectionP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. architecto magnam minima delectus assumenda quo quod.</p>
-            
+            <h2 class="section__title marginBot2Rem">Conóceme</h2>                 
+            <p class="marginBot2Rem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. architecto magnam minima delectus assumenda quo quod.</p>
           </header>
-          <div class="about__img">
+          <div class="about__img marginBot2Rem">
               <picture class="">
                 <img src="#" alt="MDN">
               </picture>
-            </div>
-            <p class="about_p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi sunt voluptates perferendis ea beatae
-              st, hic dolore velit aperiam amet temporibus asperiores alias, rem deserunt, eligendi ab cumque reiciendis.
-            </p>
-          <footer class="about__foot">
+          </div>
+          <p class="marginBot2Rem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nisi sunt voluptates perferendis ea beatae
+            st, hic dolore velit aperiam amet temporibus asperiores alias, rem deserunt, eligendi ab cumque reiciendis.
+          </p>
+          <footer class="section__footer">
             <a href="#">Cónocer mas de mi!</a>
           </footer>
-       
-      </section>
-      <!-- Contact -->
-      <section class="Padding2e">
-        <header>
-          <h2 class="sectionTitles">Puedes contactarme por estas vías:</h2>
-          <p class="sectionP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facere harum provident iusto architecto magnam minima delectus assumenda quo quod.</p>
-        </header>
-        <details>
-          <summary>Sé que eres Retro, envíame un correo!</summary>
-          <form action="">
-            <label for="clientName">Nombre</label>
-            <input id="clientName" type="text">
+        </section>
+        <!-- Contact -->
+        <section class="section padding2Rem">
+          <header>
+            <h2 class="section__title marginBot2Rem">Puedes contactarme por estas vías:</h2>
+            <p class="marginBot2Rem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam facere harum provident iusto architecto magnam minima delectus assumenda quo quod.</p>
+          </header>
+          <details>
+            <summary>Sé que eres Retro, envíame un correo!</summary>
+            <form action="">
+              <label for="clientName">Nombre</label>
+              <input id="clientName" type="text">
 
-            <label for="clientEmail">E-mail</label>
-            <input id="clientMail" type="email" name="clientEmail">
+              <label for="clientEmail">E-mail</label>
+              <input id="clientMail" type="email" name="clientEmail">
 
-            <textarea placeholder="Hola! Me gustaría hablar de negocios" name="clientMessage" id="clientMessage"></textarea>
+              <textarea placeholder="Hola! Me gustaría hablar de negocios" name="clientMessage" id="clientMessage"></textarea>
 
-            <button type="submit">Enviar</button>
-          </form>
-        </details>
-        <div id="contactPlaceholder">
-
-        </div>
-      </section>
-    </main>
+              <button type="submit">Enviar</button>
+            </form>
+          </details>
+          <div id="contactPlaceholder">
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        KeiScrip
+      </footer>
     <div>
   </body>
 </html>

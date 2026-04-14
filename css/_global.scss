@@ -1,45 +1,54 @@
-body {
-  min-height: 100dvh;
-  /* outline: 2px solid steelblue; */
+.body {
   color: azure;
   font-family: sans-serif;
   position: relative;
   background-color: rgb(36, 36, 36);
 }
-.elemento {
+.object {
   position: fixed;
   width: 40rem;
   height: 40rem;
 }
-.elemento--1 {
+.object--1 {
   top: -15rem;
   left: -10rem;
   animation: roll 30s infinite;
 }
-.elemento--2 {
+.object--2 {
   bottom: -10rem;
   right: -20rem;
   animation: roll 40s infinite;
 }
-.elemento--3 {
+.object--3 {
   bottom: 4rem;
   right: 1rem;
   animation: roll 35s infinite;
 }
-.bg {
-  position: relative;
-  backdrop-filter: blur(100px);
-  background-color: rgba(70, 68, 68, 0.664);
+.aplicationBg {
+  backdrop-filter: blur(200px);
+  background-color: transparent;
 }
-
-.Padding2e {
+.footer {
+  background-color: black;
+  color: white;
+  min-height: 30dvh;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+/* Functional classes */
+.padding2Rem {
   padding: 2rem;
+}
+.marginBot2Rem {
+  margin-bottom: 2rem;
 }
 .pageLinkBtn {
   padding: 1rem;
   display: block;
 }
 
+/* Animations */
 @keyframes roll {
   0% {
     transform: rotate(360deg);
@@ -52,13 +61,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.footer {
-  background-color: black;
-  color: white;
-  min-height: 30dvh;
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
 }

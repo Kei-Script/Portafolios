@@ -1,18 +1,19 @@
-.HeaderIntro {
-  outline: 2px solid saddlebrown;
+.intro {
+  /* outline: 2px solid saddlebrown; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
-  margin-bottom: 4rem;
 }
 
-.AvatarContainer {
+.intro__avatar {
   width: 8rem;
   height: 8rem;
   outline: 2px solid black;
-  margin-bottom: 2rem;
 }
-.IntroTitle {
+.intro__title {
   font-size: 2rem;
+}
+.intro__title--sub {
+  color: rgb(211, 211, 211);
 }
